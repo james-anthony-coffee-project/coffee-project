@@ -7,6 +7,7 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+
 .hidden{
     display: none;
 }
@@ -48,6 +49,11 @@ tr{
 
 .coffee_box{
     float: right;
+    margin-top: .5em;
+}
+
+.coffee-names {
+    font-family: 'Roboto Mono';
 }
 
 .wrapper {
@@ -73,20 +79,57 @@ tr{
 }
 
 .search {
-    border: 1px solid grey;
+    border: 2px solid grey;
     border-radius: 5px;
     height: 20px;
     width: 100%;
     padding: 2px 23px 2px 30px;
     outline: 0;
-    background-color: #f5f5f5;
+    background-color: lightgoldenrodyellow;
+    font-size: medium;
 }
 
 .search:hover, .search:focus {
-    border: 1.5px solid #009688;
-    background-color: white;
+    border: 2px solid black;
+    background-color: lightgoldenrodyellow;
 }
 
+.button {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
 
+.button:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
 
+.roast-dropdown {
+    font-size: 18px;
+    border-radius: 5px;
+    height: 30px;
+    width: 65%;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color: lightgoldenrodyellow;
+}
 
+.coffee-mug {
+    height: 150px;
+    width: 150px;
+}
