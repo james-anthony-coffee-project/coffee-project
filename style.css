@@ -22,22 +22,14 @@ tr{ /* Hide table header row*/
 }
 
 #coffees{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 50%;
-    border: 3px solid transparent;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
     text-align: center;
-    flex-flow: column wrap;
 }
 
 /* Search bar*/
 
 #search {
+    display: block;
+    margin: auto;
     width: 18em;
 }
 
@@ -55,6 +47,8 @@ tr{ /* Hide table header row*/
 /* Dropdown menu */
 
 .roast-dropdown {
+    display: block;
+    margin: auto;
     font-size: 18px;
     border-radius: 5px;
     height: 50px;
@@ -65,26 +59,28 @@ tr{ /* Hide table header row*/
 }
 
 .button {
+    display: block;
+    margin: auto;
     background-color: brown;
     border: 2px solid white;
     color: white;
     padding: 7px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     border-radius: 10px;
     transition-duration: 0.4s;
 }
 
 .button:hover {
+    display: block;
+    margin: auto;
     background-color: red;
     border: 2px solid red;
     color: white;
     padding: 7px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     border-radius: 10px;
     transition-duration: 0.4s;
@@ -92,22 +88,43 @@ tr{ /* Hide table header row*/
 
 /* Coffee display list*/
 
-.textalignment{
+.column{
+    columns: 3;
+    height: auto;
+    width: 100%;
+}
+
+.column div {
+    break-inside: avoid;
+    -webkit-margin-before: 0;
+    margin: 0;
+}
+
+.content-cards{
     text-align: center;
     font-size: .9em;
+    padding: 0;
+    margin: 0;
 }
 
-.coffee_box{
+.content-cards p {
+    font-size: .7em;
+    padding: 0;
+    margin: .3em 0 0 2em;
+}
+
+.search_boxes{
     text-align: center;
+    margin: 3em;
 }
 
-.coffee-names {
+.superhero-names{
     font-family: 'Roboto Mono';
 }
 
-.coffee-mug {
-    height: 150px;
-    width: 150px;
+.card-picture{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    overflow: hidden;
 }
-
-

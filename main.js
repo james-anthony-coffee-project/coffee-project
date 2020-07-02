@@ -44,20 +44,20 @@ function updateCoffee2(e) { // Dynamically adjusts display based on letters type
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
-    {id: 1, name: 'Light City', roast: 'Light', img: '<img src="coffee-mug.png" class="coffee-mug" alt=""/>'},
-    {id: 2, name: 'Half City', roast: 'Light', img: '<img src="coffee-mug.png" class="coffee-mug" alt=""/>'},
-    {id: 3, name: 'Cinnamon', roast: 'Light', img: '<img src="coffee-mug.png" class="coffee-mug" alt="">'},
-    {id: 4, name: 'City', roast: 'Medium', img: '<img src="coffee-mug.png" class="coffee-mug" alt="">'},
-    {id: 5, name: 'American', roast: 'Medium', img: '<img src="coffee-mug.png" class="coffee-mug" alt="">'},
-    {id: 6, name: 'Breakfast', roast: 'Medium', img: '<img src="coffee-mug.png" class="coffee-mug" alt="">'},
-    {id: 7, name: 'High', roast: 'Dark', img: '<img src="coffee-mug.png" class="coffee-mug" alt="">'},
-    {id: 8, name: 'Continental', roast: 'Dark', img: '<img src="coffee-mug.png" class="coffee-mug" alt="">'},
-    {id: 9, name: 'New Orleans', roast: 'Dark', img: '<img src="coffee-mug.png" class="coffee-mug" alt="">'},
-    {id: 10, name: 'European', roast: 'Dark', img: '<img src="coffee-mug.png" class="coffee-mug" alt="">'},
-    {id: 11, name: 'Espresso', roast: 'Dark', img: '<img src="coffee-mug.png" class="coffee-mug" alt="">'},
-    {id: 12, name: 'Viennese', roast: 'Dark', img: '<img src="coffee-mug.png" class="coffee-mug" alt="">'},
-    {id: 13, name: 'Italian', roast: 'Dark', img: '<img src="coffee-mug.png" class="coffee-mug" alt="">'},
-    {id: 14, name: 'French', roast: 'Dark', img: '<img src="coffee-mug.png" class="coffee-mug" alt="">'},
+    {id: 1, name: 'Light City', roast: 'Light', img: '<img src="coffee-mug-light.png" class="coffee-mug" alt=""/>'},
+    {id: 2, name: 'Half City', roast: 'Light', img: '<img src="coffee-mug-light.png" class="coffee-mug" alt=""/>'},
+    {id: 3, name: 'Cinnamon', roast: 'Light', img: '<img src="coffee-mug-light.png" class="coffee-mug" alt="">'},
+    {id: 4, name: 'City', roast: 'Medium', img: '<img src="coffee-mug-medium.png" class="coffee-mug" alt="">'},
+    {id: 5, name: 'American', roast: 'Medium', img: '<img src="coffee-mug-medium.png" class="coffee-mug" alt="">'},
+    {id: 6, name: 'Breakfast', roast: 'Medium', img: '<img src="coffee-mug-medium.png" class="coffee-mug" alt="">'},
+    {id: 7, name: 'High', roast: 'Dark', img: '<img src="coffee-mug-dark.png" class="coffee-mug" alt="">'},
+    {id: 8, name: 'Continental', roast: 'Dark', img: '<img src="coffee-mug-dark.png" class="coffee-mug" alt="">'},
+    {id: 9, name: 'New Orleans', roast: 'Dark', img: '<img src="coffee-mug-dark.png" class="coffee-mug" alt="">'},
+    {id: 10, name: 'European', roast: 'Dark', img: '<img src="coffee-mug-dark.png" class="coffee-mug" alt="">'},
+    {id: 11, name: 'Espresso', roast: 'Dark', img: '<img src="coffee-mug-dark.png" class="coffee-mug" alt="">'},
+    {id: 12, name: 'Viennese', roast: 'Dark', img: '<img src="coffee-mug-dark.png" class="coffee-mug" alt="">'},
+    {id: 13, name: 'Italian', roast: 'Dark', img: '<img src="coffee-mug-dark.png" class="coffee-mug" alt="">'},
+    {id: 14, name: 'French', roast: 'Dark', img: '<img src="coffee-mug-dark.png" class="coffee-mug" alt="">'},
 ];
 
 coffees.reverse();
