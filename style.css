@@ -1,7 +1,3 @@
-span {
-    font-size: 1.8em;
-}
-
 table {
     border-collapse: collapse;
     margin: 15px;
@@ -27,18 +23,23 @@ tr{ /* Hide table header row*/
 
 /* Search bar*/
 
+input:focus::placeholder {
+    color: transparent;
+}
+
 #search {
     display: block;
     margin: auto;
-    width: 18em;
+    width: 14.5em;
 }
 
 .search {
+    text-align: center ;
     border: 1px solid grey;
     border-radius: 5px;
     height: 50px;
     width: 100%;
-    padding: 2px 28px 2px 5px;
+    /*padding: 2px 28px 2px 5px;*/
     outline: 0;
     background-color: lightgoldenrodyellow;
     font-size: medium;
@@ -52,8 +53,8 @@ tr{ /* Hide table header row*/
     font-size: 18px;
     border-radius: 5px;
     height: 50px;
-    width: 16%;
-    padding: 2px 23px 2px 30px;
+    width: 13.5em;
+    padding: 2px 0 0 0;
     outline: 0;
     background-color: lightgoldenrodyellow;
 }
@@ -107,12 +108,6 @@ tr{ /* Hide table header row*/
     margin: 0;
 }
 
-.content-cards p {
-    font-size: .7em;
-    padding: 0;
-    margin: .3em 0 0 2em;
-}
-
 .search_boxes{
     text-align: center;
     margin: 3em;
@@ -122,9 +117,7 @@ tr{ /* Hide table header row*/
     font-family: 'Roboto Mono';
 }
 
-.card-picture{
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-    overflow: hidden;
+.coffee-mug{
+    width: 50%;
+    height: 50%;
 }

@@ -1,27 +1,27 @@
 "use strict";
 
 function renderCoffee(coffee) {
-    var html = '<div id="rendered_coffee" style="border: 12px solid lightslategray; border-radius: 15px; margin-bottom: 3em; background-color: linen">' + '<h1 class="coffee">';
-    html += '<div class="hidden">' + coffee.id + '</div>';
-    html += '<p>' + coffee.img + '</p>';
-    html += '<h1><em>' + coffee.name + '</em></h1>';
-    html += '<p>' + 'Roast Type: ' + coffee.roast + '</p>';
-    html += '</h1>' + '</div>';
+    let html = '<div id="rendered_coffee" style="border: 6px solid lightslategray; border-radius: 15px; margin-bottom: 3em; background-color: linen">';
+    html = html + '<div class="hidden">' + coffee.id + '</div>';
+    html = html + coffee.img;
+    html = html + '<h2><em>' + coffee.name + '</em></h2>';
+    html = html + '<p>' + 'Roast: ' + coffee.roast + '</p>';
+    html = html + '</h1>' + '</div>';
     return html;
 }
 
 function renderCoffees(coffees) {
-    var html = '';
-    for (var i = coffees.length - 1; i >= 0; i--){
-        html += renderCoffee(coffees[i]);
+    let html = '';
+    for (let i = coffees.length - 1; i >= 0; i--){
+        html = html + renderCoffee(coffees[i]);
     }
     return html;
 }
 
 function updateCoffees(e) { // Dynamically adjusts display based on roast type selected in dropdown
     e.preventDefault(); // don't submit the form, we just want to update the data
-    var selectedRoast = roastSelection.value;
-    var filteredCoffees = [];
+    let selectedRoast = roastSelection.value;
+    let filteredCoffees = [];
     coffees.forEach(function(coffee) {
         if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
@@ -32,8 +32,8 @@ function updateCoffees(e) { // Dynamically adjusts display based on roast type s
 
 function updateCoffee2(e) { // Dynamically adjusts display based on letters typed in search bar
     e.preventDefault(); // don't submit the form, we just want to update the data
-    var selectedCoffee = searchBar.value;
-    var filteredCoffees = [];
+    let selectedCoffee = searchBar.value;
+    let filteredCoffees = [];
     coffees.filter(function(coffees) {
         if (coffees.roast.toLowerCase().match(selectedCoffee) || coffees.name.toLowerCase().match(selectedCoffee)) {
             filteredCoffees.push(coffees);
@@ -43,7 +43,7 @@ function updateCoffee2(e) { // Dynamically adjusts display based on letters type
 }
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
-var coffees = [
+let coffees = [
     {id: 1, name: 'Light City', roast: 'Light', img: '<img src="coffee-mug-light.png" class="coffee-mug" alt=""/>'},
     {id: 2, name: 'Half City', roast: 'Light', img: '<img src="coffee-mug-light.png" class="coffee-mug" alt=""/>'},
     {id: 3, name: 'Cinnamon', roast: 'Light', img: '<img src="coffee-mug-light.png" class="coffee-mug" alt="">'},
@@ -58,13 +58,14 @@ var coffees = [
     {id: 12, name: 'Viennese', roast: 'Dark', img: '<img src="coffee-mug-dark.png" class="coffee-mug" alt="">'},
     {id: 13, name: 'Italian', roast: 'Dark', img: '<img src="coffee-mug-dark.png" class="coffee-mug" alt="">'},
     {id: 14, name: 'French', roast: 'Dark', img: '<img src="coffee-mug-dark.png" class="coffee-mug" alt="">'},
+    {id: 15, name: 'Colombian', roast: 'Medium', img: '<img src="coffee-mug-medium.png" class="coffee-mug" alt="">'}
 ];
 
 coffees.reverse();
-var tbody = document.querySelector('#coffees');
-var submitButton = document.querySelector('#submit');
-var searchBar = document.querySelector('#search');
-var roastSelection = document.querySelector('#roast-selection');
+let tbody = document.querySelector('#coffees');
+let submitButton = document.querySelector('#submit');
+let searchBar = document.querySelector('#search');
+let roastSelection = document.querySelector('#roast-selection');
 
 tbody.innerHTML = renderCoffees(coffees);
 
