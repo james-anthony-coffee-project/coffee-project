@@ -7,13 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="header">
-    <h1>Coffee!</h1>
-    <p>My supercool header</p>
-</div>
+<div class="header"></div>
 <br>
-
 <div class="coffee_box">
+    <input id="search" class="search" type="text" placeholder="Search by Name or Roast...">
+    <br>
+    <br>
     <form>
         <label for="roast-selection"></label>
         <select id="roast-selection" class="roast-dropdown">
@@ -22,28 +21,10 @@
             <option>Dark</option>
         </select>
         <input id="submit" type="submit" class="button">
-        <span class="or-spacing">OR</span>
-        <input id="search" class="search" type="text" placeholder="Search by Name or Roast...">
     </form>
 </div>
-
-<!--<div>-->
-<!--    <table class="textalignment">-->
-<!--        <thead>-->
-<!--        <tr>-->
-<!--            <th>ID</th>-->
-<!--            <th>NAME</th>-->
-<!--            <th>ROAST</th>-->
-<!--        </tr>-->
-<!--        </thead>-->
-<!--        <tbody id="coffees" class="coffee-names"></tbody>-->
-<!--    </table>-->
-<!--</div>-->
+<br>
 <div id="coffees"></div>
 <script src="main.js"></script>
 </body>
-<div class="footer">
-    <h1>Coffee!</h1>
-    <p>My supercool footer</p>
-</div>
 </html>
